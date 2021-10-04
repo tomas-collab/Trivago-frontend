@@ -11,14 +11,23 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-.logIn{
+#logIn{
   margin-top: 100px;
   margin-left: 200px;
   margin-right: 200px;
-  
+  border: 1px solid black;
+  padding: 20px;
+  box-shadow: 3px 3px 3px ;
+}
+.right-login{
+  border-left: 1px black solid;
 }
 .form{
   margin-left: 50px;
   margin-right: 50px;
   margin-top: 200px;
+}
+.trivalogo{
+  display: flex;
+  margin: auto;
 }

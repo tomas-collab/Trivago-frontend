@@ -1,6 +1,6 @@
 import { useState } from "react"
 import React from 'react'
-import {Form,Button} from 'react-bootstrap'
+import {Form,Button, Col,Container,Row} from 'react-bootstrap'
 import { Redirect } from "react-router-dom"
 
 const LogIn=()=>{
@@ -52,24 +52,39 @@ const LogIn=()=>{
      return isDisabled
  }
     return(
-         <>
-             
-         <Form className='logIn' onSubmit={handleSubmit}>
-             <h4>sign in with email</h4>
-                <Form.Group className="mb-3" >
-                    <Form.Label>Email address</Form.Label>
-                    <Form.Control type="email" placeholder="Enter email" onChange={(e)=>handleInput('email',e.target.value)}  value={registration.email}/>
-                </Form.Group>
-                <Form.Group className="mb-3">
-                    <Form.Label>Password</Form.Label>
-                    <Form.Control type="password" placeholder="Password" onChange={(e)=>handleInput('password',e.target.value)}  value={registration.password}/>
-                </Form.Group>
+         <Container  id='logIn'>
+                <img className='trivalogo' src="https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,h_170,w_170,f_auto,b_white,q_auto:eco,dpr_1/v1448891356/jybdj1d8b5g7uhzs96pl.png" alt="" />
+            <Row >
+                <Col md={6}>
+                <Form onSubmit={handleSubmit}>
+                      <h2>Log in or create an account</h2>
+                       <h5 className="mb-4">Enter your e-mail address to start</h5>
+                        <Form.Group className="mb-3" >
+                            <Form.Label>Email address</Form.Label>
+                            <Form.Control type="email" placeholder="Enter email" onChange={(e)=>handleInput('email',e.target.value)}  value={registration.email}/>
+                        </Form.Group>
+                        <Form.Group className="mb-3">
+                            <Form.Label>Password</Form.Label>
+                            <Form.Control type="password" placeholder="Password" onChange={(e)=>handleInput('password',e.target.value)}  value={registration.password}/>
+                        </Form.Group>
                 <Button disabled={isButtonDisabled()} variant="primary" type="submit">
                     Submit
                 </Button>
-        </Form>  
-        <a href="http://localhost:3000/authors/googleLogin"><button>google logIn</button></a>
-         </>
+        </Form>
+                </Col>
+                <Col className="right-login" md={6}>
+                    <div className='d-flex'>
+                    <a href="http://localhost:3000/authors/googleLogin"><button>google logIn</button></a>
+                    </div>
+                    <div>
+
+                    continue with facebook
+                    </div>
+                </Col>
+            </Row>
+           
+       
+         </Container>
     )
 }
 
