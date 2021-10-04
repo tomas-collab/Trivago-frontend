@@ -1,8 +1,8 @@
-import React, { Component } from "react";
+import React from "react";
 import { Container } from "react-bootstrap";
-import Navbar from '../../components/navbar/index'
-import BlogList from "../../components/blog/blog-list";
+import Navbar from '../Navbar'
 import "./styles.css";
+import Accommodation from "../Accommodation";
 
 const Home =(props) =>{
 console.log('props',props)
@@ -10,7 +10,7 @@ console.log('props',props)
       <Container >
          <Navbar/>
           <h1 className="blog-main-title">Welcome to the Strive Blog!</h1>
-        <BlogList />
+        <Accommodation/>
       </Container>
     );
 
