@@ -21,7 +21,7 @@ const Registration=()=>{
        e.preventDefault()
            
   
-         const response = await fetch('http://localhost:3000/authors/register',{
+         const response = await fetch('http://localhost:3000/',{
                method:'POST',
                headers:{"Content-Type": "application/json"},
                body:JSON.stringify({
