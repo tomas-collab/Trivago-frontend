@@ -2,6 +2,7 @@ import { useState } from "react"
 import React from 'react'
 import {Form,Button, Col,Container,Row} from 'react-bootstrap'
 import { Redirect } from "react-router-dom"
+import {AiFillFacebook,AiFillApple} from 'react-icons/ai'
 
 const LogIn=()=>{
 
@@ -73,13 +74,13 @@ const LogIn=()=>{
         </Form>
                 </Col>
                 <Col className="right-login" md={6}>
-                    <div className='d-flex'>
-                    <a href="http://localhost:3000/authors/googleLogin"><button>google logIn</button></a>
+                    <div className='d-flex mb-4'>
+                    <a href="http://localhost:3000/authors/googleLogin"><button>Sign in to trivago with Google</button></a>
                     </div>
-                    <div>
-
-                    continue with facebook
-                    </div>
+                    
+                        <button className='d-flex mb-4'><AiFillFacebook style={{color:'blue'}}/>continue with Facebook</button>
+                    
+                        <button><AiFillApple style={{color:'blue'}} />continue with Apple</button>
                 </Col>
             </Row>
            
