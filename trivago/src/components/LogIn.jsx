@@ -75,12 +75,12 @@ const LogIn=()=>{
                 </Col>
                 <Col className="right-login" md={6}>
                     <div className='d-flex mb-4'>
-                    <a href="http://localhost:3000/authors/googleLogin"><button>Sign in to trivago with Google</button></a>
+                    <a href="http://localhost:3001/users/googleLogin"><button>Sign in to trivago with Google</button></a>
                     </div>
                     
                         <button className='d-flex mb-4'><AiFillFacebook style={{color:'blue'}}/>continue with Facebook</button>
                     
-                        <button><AiFillApple style={{color:'blue'}} />continue with Apple</button>
+                        <button><AiFillApple />continue with Apple</button>
                 </Col>
             </Row>
            

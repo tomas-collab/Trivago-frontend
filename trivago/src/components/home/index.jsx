@@ -9,7 +9,7 @@ console.log('props',props)
     return (
       <Container >
          <Navbar/>
-          <h1 className="blog-main-title">Welcome to the Strive Blog!</h1>
+          <h1 className="blog-main-title">Welcome to Trivago !</h1>
         <Accommodation/>
       </Container>
     );

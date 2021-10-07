@@ -4,7 +4,7 @@ import React from 'react'
 const Navbar = ()=>{
     return(
           <Nav>
-             welcome to Trivago
+             <div><img className='trivalogo' src="https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,h_170,w_170,f_auto,b_white,q_auto:eco,dpr_1/v1448891356/jybdj1d8b5g7uhzs96pl.png" alt="" /></div> 
           </Nav>
     )
 }
